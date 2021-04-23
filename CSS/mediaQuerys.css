@@ -2,6 +2,7 @@
     .navbar {
         position: relative;
         width: 100vw;
+     
     }
 
     .menubars {
@@ -10,6 +11,7 @@
         cursor: pointer;
     }
 
+ 
     .navbar .menu {
         position: absolute;
         width: 100%;
@@ -20,15 +22,38 @@
         background: rgb(190, 156, 61);
         margin-top: 38em;
         transform: translateX(185%);
+        display: none;
+        
     }
 
     .navbar .menu-toggle{
         transform: translateX(50%);
     }
     .MainContent{
-        grid-template-columns: repeat(2, 1fr);     
+        grid-template-columns: repeat(1, 1fr); 
+        height: 100vh;    
+    }
+  
+   
+    .avatar{ 
+     display: none
+    }
+  
+    .Informacion{
+        display: flex;
+        align-items: center;
+        justify-content:space-between ;
+        width: 100%;
     }
 
-  
+    .Informacion .btn{
+        margin: 10px;
+    }
+    .footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
 
+    }
+   
 }
